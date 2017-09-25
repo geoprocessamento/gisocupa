@@ -82,10 +82,10 @@ var limgrila = L.esri.dynamicMapLayer({
   opacity: 0.5
 });
 
-var baseimage2016 =  'https://www.geoservicos.segeth.df.gov.br/ArcGIS/rest/services/Basemap/Foto_2016/MapServer';
+var baseimage2016 =  'https://www.geoservicos1.segeth.df.gov.br/arcgis/rest/services/Imagens/FOTO_2016/ImageServer';
 
 //Atribui a layer Foto Aérea 2016
-var base2016 = L.esri.dynamicMapLayer({
+var base2016 = L.esri.imageMapLayer({
   url: baseimage2016,
   layers: [0],//Carrega uma layer específica em um group layers
   useCors: false
